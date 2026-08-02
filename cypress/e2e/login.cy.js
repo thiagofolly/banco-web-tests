@@ -3,7 +3,7 @@ describe('login', () => {
     cy.visit('http://localhost:4000')
     cy.screenshot('apos-visitar-pagina')
   })
-  it.only('login com dados validos deve permitir entrada no sistema', () => {
+  it('login com dados validos deve permitir entrada no sistema', () => {
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').click().type('123456')
     cy.screenshot('apos-preencher-dados-validos')
